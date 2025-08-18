@@ -1,0 +1,70 @@
+# Oops--code-examples-demonstrate-fundamental-concepts-of-Object-Oriented-Programming-OOP-in-Python.
+This repository contains a collection of simple, well-commented Python scripts that demonstrate core concepts of Object-Oriented Programming (OOP). containing Classes and Objects , Constructors  and Methods and Attributes:
+
+#object oriented programming.
+#Oops involves the concepts of classes and objects.
+#a class is a bluprint for creating the objects
+#basic syntax and program
+class Nandini: #--->declaring class
+    def display(self):#-->always  has to declare self in the funtion
+        a=10
+        b=15
+        print(a,b)
+obj=Nandini() #then to get output we have to creat object as clsss
+obj.display() #then object.method type
+#inheritance
+#inheritance is the process of acquiring the properties of one class to another
+class mobile:
+    def __init__(self,Brand,storage,camera,price,Battery):
+        self.Brand=Brand
+        self.storage=storage
+        self.camera=camera
+        self.price=price
+        self.Battery=Battery
+    def display(self):
+        print("Brand name:",self.Brand)
+        print("Storage:",self.storage)
+        print("camera:",self.camera)
+        print("price:",self.price)
+        print("Battery:",self.Battery)
+#for i in range(100):
+obj=mobile("iphone","246gb","40mgpxl",90000,"strong")
+obj.display()
+class student:
+    def __init__(self,name, rollnumber,marks):
+        self.name=name
+        self.rollnumber=rollnumber
+        self.marks=marks
+    def grade(self):
+        if self.marks >= 90:
+            return 'A'
+        elif self.marks >= 80:
+            return 'B'
+        elif self.marks >= 70:
+            return 'C'
+        elif self.marks >= 60:
+            return 'D'
+        else:
+            return 'F'
+student = student("Bob", 101, 85)
+print(f"{student.name}'s grade: {student.grade()}")
+class librarybook:
+    #construstor method
+    def __init__(self,title,author):
+        self.title=title
+        self.author=author
+        self.is_available = True
+
+    #method defination
+    def borrow(self):
+        if self.is_available:
+            self.is_available = False
+            print(f"{self.title} borrowed successfully.")
+        else:
+            print(f"{self.title} currently not available.")
+    def return_book(self):
+        self.is_available = True
+        print(f"{self.title} returned successfully.")
+librarybook=librarybook("Hella","jefrey archer")
+librarybook.borrow()
+librarybook.return_book()
