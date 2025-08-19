@@ -1,0 +1,68 @@
+class animal:
+    def speak(self):
+        print("animal speaks")
+#child class
+class Dog(animal):
+    def speak(self):
+        print("says bark bark")
+#another class
+class Cat(animal):
+    def speak(self):
+        print("says meow meow")
+#using classes
+a=animal()
+b=Dog()
+c=Cat()
+
+a.speak()
+b.speak()
+c.speak()
+
+#parent class
+class Mobile:
+    def Brand(self):
+        print("top brand phones")
+#child class
+class Apple:
+    def iphone(self):
+        print("present 16th series is trend")
+#another class
+class Samgung:
+    def s24(self):
+        print("new trend")
+#using classes
+a=Mobile()
+b=Apple()
+c=Samgung()
+
+a.Brand()
+b.iphone()
+c.s24()
+
+#family situation
+#parent class
+class family:
+    def situation(self):
+        print("lets knw abt fam situation and behaviour")
+#child class
+class father:
+    def reaction(family):
+        print("He tries to conveniec the family")
+class mother:
+    def sadness(family):
+        print("she always feel sad and supports family")
+class brother:
+    def responsible(family):
+        print("he take cares of family and thinks in all ways")
+a=family()
+b=father()
+c=mother()
+d=brother()
+
+a.situation()
+b.reaction()
+c.sadness()
+d.responsible()
+
+
+
